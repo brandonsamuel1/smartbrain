@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "clarifai": "^2.9.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-particles-js": "^2.7.0",
@@ -30,5 +31,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
   }
 }
