@@ -19,6 +19,7 @@ const db = knex({
     }
 });
 
+const PORT = process.env.PORT || 8080;
 
 const app = express();
 
@@ -37,6 +38,6 @@ app.post('/register', (req, res) => { register.handleRegister(req, res, db, bcry
 app.put('/image', (req, res) => { image.handleImage(req, res, db) });
 app.post('/imageurl', (req, res) => { image.handleApiCall(req, res) });
 
-app.listen(8080, () => {
-    console.log('Server started on port 8080...')
+app.listen(PORT, () => {
+    console.log(`Server started on port ${PORT}...`)
 });
