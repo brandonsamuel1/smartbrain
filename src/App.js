@@ -9,8 +9,6 @@ import Register from './components/Register/Register';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import Particles from 'react-particles-js';
 
-require('dotenv').config();
-
 const particleOptions = {
   particles: {
     "number": {
