@@ -28,7 +28,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 
-app.get('/', (req, res) => { res.send(database.users); });
+app.get('/', (req, res) => { res.send('it worked'); });
 
 app.get('/profile/:id', (req, res) => { profile.getProfile(req, res, db) });
 
